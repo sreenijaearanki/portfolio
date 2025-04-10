@@ -1,0 +1,14 @@
+personal-portfolio/
+├─ app/
+│  ├─ page.tsx                ← Home
+│  ├─ resume/page.tsx         ← Resume Page
+│  ├─ projects/page.tsx       ← Projects Page
+│  ├─ contact/page.tsx        ← Contact Page
+├─ components/
+│  ├─ Navbar.tsx              ← Navigation Bar
+│  ├─ ProjectCard.tsx         ← Project UI card
+│  ├─ Footer.tsx              ← Optional footer
+├─ styles/
+│  ├─ globals.css
+├─ public/
+│  ├─ resume.pdf              ← Your resume
