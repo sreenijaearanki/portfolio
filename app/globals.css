@@ -29,3 +29,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes draw {
+  0% {
+    stroke-dasharray: 0, 300;
+  }
+  100% {
+    stroke-dasharray: 300, 0;
+  }
+}
+
+.animate-draw {
+  animation: draw 1s ease-out forwards;
+}

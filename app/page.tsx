@@ -1,3 +1,6 @@
+import React from "react";
+import ExperienceGraph from './components/ExperienceGraph'
+import ExperienceTimeline from './components/ExperienceTimeline';
 import { FaChevronDown, FaTheaterMasks } from "react-icons/fa"
 import Image from 'next/image'
 import { FaLinkedin, FaCocktail } from 'react-icons/fa'
@@ -44,7 +47,6 @@ import {
   DiPostgresql,
   DiVisualstudio,
 } from "react-icons/di";
-
 
 
 export default function Home() {
@@ -130,7 +132,7 @@ export default function Home() {
 
         {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 text-center text-gray-700 text-sm"> */}
         <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-10 text-center text-gray-700 text-sm max-w-screen-xl mx-auto place-items-center">
-   
+
           {/* Repeatable Skill Icon Block */}
           <div className="flex flex-col items-center">
             <DiJava className="text-6xl text-[#f89820]" />
@@ -307,15 +309,17 @@ export default function Home() {
 
 
 
-
       {/* Experience section with brief */}
-      <section id="experience" className="h-screen flex flex-col justify-center items-center px-4 text-center py-20">
+      {/* <section id="experience" className="h-screen flex flex-col justify-center items-center px-4 text-center py-20">
         <h2 className="text-3xl font-bold mb-4 text-center">Experience</h2>
         <div className="text-center text-gray-700">
           <p>Intern @ Retensa – Built XYZ...</p>
           <p>Research Assistant @ IU – Worked on ABC...</p>
         </div>
-      </section>
+      </section> */}
+      
+      <ExperienceTimeline />
+
     </main>
   )
 }
