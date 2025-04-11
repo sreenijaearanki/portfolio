@@ -12,3 +12,10 @@ personal-portfolio/
 │  ├─ globals.css
 ├─ public/
 │  ├─ resume.pdf              ← Your resume
+
+
+service id=> service_jqkrkuo
+
+emailjs.send("service_jqkrkuo","template_fa0kcc8");
+
+hOKYimM48BE18EBGG
