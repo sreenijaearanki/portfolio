@@ -11,9 +11,9 @@ export default function About() {
 
     return (
 
-        < section id="about" className="h-screen flex flex-col justify-center items-center bg-green-50 px-6 text-center" >
+        < section id="about" className="h-screen flex flex-col justify-center items-center bg-sky-50 px-6 text-center" >
 
-            <h2 className="text-4xl font-bold mb-6">About</h2>
+            <h2 className="text-4xl font-figtree font-bold mb-6">About</h2>
 
             <div className="max-w-5xl w-full flex flex-col md:flex-row items-center gap-10 md:gap-20 animate-fade-in">
 
@@ -48,8 +48,8 @@ export default function About() {
                     <br /><br />
                     I love solving real-world problems end-to-end—whether it's crafting clean APIs or building intuitive UIs. I'm excited about opportunities where I can learn fast, build with impact, and grow with a great team.
                 </p>
-
             </div>
+
         </section >
 
     );

@@ -15,7 +15,13 @@ module.exports = {
       animation: {
         'fade-in-zoom': 'fade-in-zoom 0.8s ease-out forwards',
       },
+      colors: {
+        'aqua-mint': '#d4f3f2',
+      },
+      fontFamily: {
+        figtree: ['"Figtree"', 'sans-serif'],
+      }
     },
   },
   plugins: [],
-}
+}  

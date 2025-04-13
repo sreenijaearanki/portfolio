@@ -5,8 +5,13 @@ import Image from 'next/image'
 import { FaLinkedin, FaCocktail } from 'react-icons/fa'
 import { MdBarChart } from "react-icons/md";
 import { RiFileExcel2Fill } from "react-icons/ri";
+import { TbPrompt } from "react-icons/tb";
 import {
     SiGo,
+    SiOpenai,
+    SiJupyter,
+    SiHuggingface,
+    SiTensorflow,
     SiSpringboot,
     SiTypescript,
     SiNextdotjs,
@@ -56,14 +61,10 @@ export default function Skills() {
 
         <section
             id="skills"
-            className="min-h-screen flex flex-col justify-center items-center bg-green-50 px-6 py-16"
+            className="min-h-screen flex flex-col justify-center items-center bg-blue-50 px-6 py-16"
         >
-            {/* min-h-screen flex flex-col justify-center items-center bg-green-50 px-6 */}
-            {/* h-screen flex flex-col justify-center items-center bg-green-50 px-6 */}
-            <h2 className="text-4xl font-bold mb-12 text-center">Skills</h2>
-
-            {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10 text-center text-gray-700 text-sm"> */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-10 text-center text-gray-700 text-sm max-w-screen-xl mx-auto place-items-center">
+            <h2 className="text-4xl font-bold mb-12 font-quantico text-center">Skills</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-10 text-center text-gray-700 text-sm max-w-screen-xl mx-auto place-items-center font-helvetica">
 
                 {/* Repeatable Skill Icon Block */}
                 <div className="flex flex-col items-center">
@@ -232,9 +233,26 @@ export default function Skills() {
                     <span>Maven</span>
                 </div>
                 <div className="flex flex-col items-center">
-                    <MdBarChart className="text-5xl text-yellow-500" />
-                    <span>Power BI</span>
+                    <SiOpenai className="text-5xl text-yellow-500" />
+                    <span>Open AI API</span>
                 </div>
+                <div className="flex flex-col items-center">
+                    <SiTensorflow className="text-5xl text-yellow-500" />
+                    <span>Tensorflow</span>
+                </div>
+                <div className="flex flex-col items-center">
+                    <SiHuggingface className="text-5xl text-yellow-500" />
+                    <span>Tensorflow</span>
+                </div>
+                <div className="flex flex-col items-center">
+                    <TbPrompt className="text-5xl text-yellow-500" />
+                    <span>Prompt Engineering</span>
+                </div>
+                <div className="flex flex-col items-center">
+                    <SiJupyter className="text-5xl text-yellow-500" />
+                    <span>Jupyter</span>
+                </div>
+
 
             </div>
         </section>

@@ -33,41 +33,8 @@ export default function ContactPage() {
     }
   }
 
-  
-//   const handleSubmit = async (e: React.FormEvent) => {
-//     e.preventDefault()
-
-//     const templateParams = {
-//       from_name: `${form.firstName} ${form.lastName}`,
-//       from_email: form.email,
-//       contact_number: form.contact,
-//       message: form.message,
-//     }
-
-//     try {
-//       const result = await emailjs.send(
-//         'service_jqkrkuo',
-//         'template_fa0kcc8',
-//         templateParams,
-//         'hOKYimM48BE18EBGG'
-//       )
-
-//       alert('Message sent successfully!')
-//       setForm({
-//         firstName: '',
-//         lastName: '',
-//         email: '',
-//         contact: '',
-//         message: '',
-//       })
-//     } catch (error) {
-//       console.error(error)
-//       alert('Something went wrong. Please try again later.')
-//     }
-//   }
-
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-4 py-24 bg-white dark:bg-gray-900 text-black dark:text-white">
+    <main className="min-h-screen flex flex-col items-center justify-center px-4 py-24 bg-sky-50 text-black ">
       <div className="max-w-2xl w-full">
         <h1 className="text-4xl font-bold mb-6 text-center">Get in Touch</h1>
         <form onSubmit={handleSubmit} className="space-y-4 bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">

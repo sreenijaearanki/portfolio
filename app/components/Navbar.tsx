@@ -35,13 +35,13 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <nav className="bg-white shadow-md p-4 fixed top-0 left-0 w-full z-50">
+    <nav className="bg-sky-100 shadow-md p-4 fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-indigo-600">My Portfolio</Link>
         <div className="space-x-6">
           <a href="#about" onClick={handleScrollOrNavigate('about')} className="text-gray-700 hover:text-indigo-600">About</a>
+          <a href="#education" onClick={handleScrollOrNavigate('education')} className="text-gray-700 hover:text-indigo-600">Education</a>
           <Link href="/projects" className="text-gray-700 hover:text-indigo-600">Projects</Link>
-          <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600">Contact</Link>
           <a href="#skills" onClick={handleScrollOrNavigate('skills')} className="text-gray-700 hover:text-indigo-600">Skills</a>
           <a href="#experience" onClick={handleScrollOrNavigate('experience')} className="text-gray-700 hover:text-indigo-600">Experience</a>
           <a
@@ -52,6 +52,7 @@ export default function Navbar() {
           >
             Resume
           </a>
+          <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600">Contact</Link>
         </div>
       </div>
     </nav>
