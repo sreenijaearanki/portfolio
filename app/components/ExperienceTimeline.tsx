@@ -16,8 +16,19 @@ type Experience = {
 
 const experiences = [
   {
+    title: 'Research Assistant',
+    company: 'Indiana University',
+    date: 'April 2024 – Present',
+    description: [
+      'Implemented few-shot classification with GPT-4 and Hugging Face models to analyze the impact of AI in music through
+sentiment analysis and audience perception studies.'
+    ],
+    tech: ['Java', 'SQL', 'Selenium', 'JMeter', 'Jenkins', 'CI/CD', 'Automation testing', 'DevOps'],
+    icon: <FaUniversity className="text-indigo-500 text-lg" />,
+  },
+  {
     title: 'Software Engineering Intern',
-    company: 'Retensa',
+    company: 'Retensa LLC',
     date: 'Sept 2024 – Dec 2024',
     description: [
       'Improved SaaS UI for 1,000+ users.',
@@ -31,41 +42,67 @@ const experiences = [
   },
   {
     title: 'Machine Learning Intern',
-    company: 'MyEdMaster',
+    company: 'MyEdMaster LLC',
     date: 'May 2024 – Aug 2024',
     description: [
-      'Generated SAT questions using GPT models.',
-      'Automated backend tasks using AWS services.'
+      'Implemented an AWS Lambda-driven backend workflow, deployed using CloudFormation, to automatically parse
+LLM-generated JSON files from Amazon S3, reducing manual processing time by 85%.',
+'Fine-tuned the OpenAI API to generate over 2,500 SAT questions, using prompt engineering, and led the migration
+from Amazon RDS to DynamoDB, improving query response times by 50%, reducing costs by $5,000, and scaling the
+platform to handle 10x more data, reducing deployment times by 80% with automated IaC.',
+'Integrated generative AI models to create personalized SAT prep content, using few-shot prompting and dynamic
+templates, which improved content variety and student engagement by 35%.'
     ],
     tech: ['Python', 'Backend', 'Large-language Models (LLMs)', 'Prompt Engineering', 'AWS DynamoDB' ],
     icon: <FaBrain className="text-indigo-500 text-lg" />,
   },
   {
-    title: 'Research Assistant',
-    company: 'Indiana University',
-    date: 'Sept 2023 – Present',
-    description: [
-      'Built research infrastructure for large data ingestion.',
-      'Created visualizations for behavioral study outcomes.'
-    ],
-    tech: ['Java', 'SQL', 'Selenium', 'JMeter', 'Jenkins', 'CI/CD', 'Automation testing', 'DevOps'],
-    icon: <FaUniversity className="text-indigo-500 text-lg" />,
-  },
-  {
     title: 'Teaching Assistant',
     company: 'Indiana University',
-    date: 'Jan 2023 – May 2023',
+    date: 'Jan 2024 – Present',
     description: [
-      'Guided students in Software Engineering concepts.',
-      'Assisted with debugging React and Java projects.'
+      'Mentored and collaborated with over 200 students, enhancing their understanding of key advanced database concepts.
     ],
     tech: ['React', 'Java'],
     icon: <FaChalkboardTeacher className="text-indigo-500 text-lg" />,
   },
   {
+    title: 'Software Engineer',
+    company: 'Accenture',
+    date: 'Aug 2021 – Jun 2023',
+    description: [
+      'Automated ETL process for Market Risk Warehouse using Python and Ansible, reducing data loading time by 30%,
+eliminating 10+ weekly manual hours, increasing data accessibility to downstream applications.',
+'Configured IBM DB2 Warehouse and implemented data warehousing solutions on IBM Sailfish retrieving data
+from NoSQL databases(Cassandra), enhancing system performance and data scalability by 80%, and resulting in a
+40% reduction in query execution time.',
+'Applied modern DevOps practices by implementing CI/CD pipelines aligned with Agile methodologies,
+automating the deployment of market risk reporting and monitoring tools using Jenkins.',
+'Refactored sequential job execution logic by implementing multithreading in Python, enabling multiple scripts to run
+in parallel; reduced overall execution time by 50% and improved system efficiency during peak processing hours.',
+'Led software validation efforts for market risk systems by expanding automation testing, implemented defect
+triage, boosting code coverage through test-driven development and reducing manual regression time by 75%.'
+    ],
+    tech: ['Python', 'SQL', 'NoSQL', 'Flask', 'Jenkins', 'CI/CD', 'React.js', 'DevOps ', 'Firebase', 'HTML/CSS'],
+    icon: <FaCode className="text-indigo-500 text-lg" />,
+  },
+  {
+    title: 'Co-Founder',
+    company: 'Startup (Aquart)',
+    date: 'Jan 2019 – Mar 2020',
+    description: [
+      'Founded AQUART, an IoT-based smart water conservation system; designed and launched a mobile app enabling
+remote monitoring, control, and billing.',
+      'Secured seed funding, obtained a patent, and attracted early market interest.',
+      'Integrated Firebase backend for dynamic content.'
+    ],
+    tech: ['TailwindCSS', 'Firebase', 'HTML/CSS', 'React-native', 'XCode', 'jQuery', 'Android Studio'],
+    icon: <FaCode className="text-indigo-500 text-lg" />,
+  },  
+  {
     title: 'Web Developer Intern',
     company: 'Web Student Designers',
-    date: 'Aug 2022 – Dec 2022',
+    date: 'April 2020 – July 2020',
     description: [
       'Designed responsive UI with TailwindCSS.',
       'Integrated Firebase backend for dynamic content.'
@@ -73,6 +110,7 @@ const experiences = [
     tech: ['TailwindCSS', 'Firebase', 'HTML/CSS'],
     icon: <FaCode className="text-indigo-500 text-lg" />,
   },
+
 ];
 
 export default function ExperienceTimeline() {
